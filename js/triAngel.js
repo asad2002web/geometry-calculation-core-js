@@ -46,3 +46,75 @@ document
       lengthInputField.value = "";
     }
   });
+
+// Parallelogram:
+document
+  .getElementById("btn-parallelogram-calculate")
+  .addEventListener("click", function () {
+    const baseInputField = document.getElementById("baseInputField-parallelogram");
+    const baseInput = parseFloat(baseInputField.value);
+
+    const heightInputField = document.getElementById("height-input-field-parallelogram");
+    const heightInput = parseFloat(heightInputField.value);
+
+    if (isNaN(baseInput) || isNaN(heightInput)) {
+      alert("Please Write  a Number");
+    } else {
+      const areaParallelogramShowe = document.getElementById("parallelogram-area-show");
+      const parallelogramResult = document.getElementById("parallelogram-area");
+      const areaParallelogram = baseInput * heightInput;
+      areaParallelogramShowe.style.display = "block";
+      parallelogramResult.innerText = areaParallelogram.toFixed(2);
+
+      baseInputField.value = "";
+      heightInputField.value = "";
+    }
+  });
+
+//   Rhombus;
+document
+  .getElementById("btn-rhombus-calculate")
+  .addEventListener("click", function () {
+    const d1InputField = document.getElementById("d1InputField-rhombus");
+    const d1Input = parseFloat(d1InputField.value);
+
+    const d2InputField = document.getElementById("d2InputField-rhombus");
+    const d2Input = parseFloat(d2InputField.value);
+
+    if (isNaN(d1Input) || isNaN(d2Input)) {
+      alert("Please Write  a Number");
+    } else {
+      const areaRhombusShowe = document.getElementById("rhombus-area-show");
+      const rhombusResult = document.getElementById("rhombus-area");
+      const areaRhombus = 0.5 * d1Input * d2Input;
+      areaRhombusShowe.style.display = "block";
+      rhombusResult.innerText = areaRhombus.toFixed(2);
+
+      d1InputField.value = "";
+      d2InputField.value = "";
+    }
+  });
+
+//   Pentagon:
+document
+  .getElementById("btn-rhombus-calculate")
+  .addEventListener("click", function () {
+    const d1InputField = document.getElementById("d1InputField-rhombus");
+    const d1Input = parseFloat(d1InputField.value);
+
+    const d2InputField = document.getElementById("d2InputField-rhombus");
+    const d2Input = parseFloat(d2InputField.value);
+
+    if (isNaN(d1Input) || isNaN(d2Input)) {
+      alert("Please Write  a Number");
+    } else {
+      const areaRhombusShowe = document.getElementById("rhombus-area-show");
+      const rhombusResult = document.getElementById("rhombus-area");
+      const areaRhombus = 0.5 * d1Input * d2Input;
+      areaRhombusShowe.style.display = "block";
+      rhombusResult.innerText = areaRhombus.toFixed(2);
+
+      d1InputField.value = "";
+      d2InputField.value = "";
+    }
+  });

@@ -3,8 +3,6 @@ document.getElementById('btn-blog').addEventListener('click', function(){
     window.open('./blog.html', '_blank');
 });
 
-// 
-
 // Function Re-use:
 
 // Input Value Function

@@ -26,24 +26,12 @@ document
 document
   .getElementById("btn-parallelogram-calculate")
   .addEventListener("click", function () {
-    const baseInputField = document.getElementById("baseInputField-parallelogram");
-    const baseInput = parseFloat(baseInputField.value);
+    const parallelogramFirstInput = getInputValue("baseInputField-parallelogram");
+    const parallelogramSecondInput = getInputValue("height-input-field-parallelogram");
 
-    const heightInputField = document.getElementById("height-input-field-parallelogram");
-    const heightInput = parseFloat(heightInputField.value);
-
-    if (isNaN(baseInput) || isNaN(heightInput)) {
-      alert("Please Write  a Number");
-    } else {
-      const areaParallelogramShowe = document.getElementById("parallelogram-area-show");
-      const parallelogramResult = document.getElementById("parallelogram-area");
-      const areaParallelogram = baseInput * heightInput;
-      areaParallelogramShowe.style.display = "block";
-      parallelogramResult.innerText = areaParallelogram.toFixed(2);
-
-      baseInputField.value = "";
-      heightInputField.value = "";
-    }
+    const areaParallelogram = parallelogramFirstInput * parallelogramSecondInput;
+    displayShow("parallelogram-area-show");
+    getInnerText("parallelogram-area" , areaParallelogram);
   });
 
 //   Rhombus;

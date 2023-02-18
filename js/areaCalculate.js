@@ -38,24 +38,12 @@ document
 document
   .getElementById("btn-rhombus-calculate")
   .addEventListener("click", function () {
-    const d1InputField = document.getElementById("d1InputField-rhombus");
-    const d1Input = parseFloat(d1InputField.value);
+    const rhombusFirstInput = getInputValue("d1InputField-rhombus");
+    const rhombusSecondInput = getInputValue("d2InputField-rhombus");
 
-    const d2InputField = document.getElementById("d2InputField-rhombus");
-    const d2Input = parseFloat(d2InputField.value);
-
-    if (isNaN(d1Input) || isNaN(d2Input)) {
-      alert("Please Write  a Number");
-    } else {
-      const areaRhombusShowe = document.getElementById("rhombus-area-show");
-      const rhombusResult = document.getElementById("rhombus-area");
-      const areaRhombus = 0.5 * d1Input * d2Input;
-      areaRhombusShowe.style.display = "block";
-      rhombusResult.innerText = areaRhombus.toFixed(2);
-
-      d1InputField.value = "";
-      d2InputField.value = "";
-    }
+    const areaRhombus = 0.5 * rhombusFirstInput * rhombusSecondInput;
+    displayShow("rhombus-area-show");
+    getInnerText("rhombus-area" , areaRhombus);
   });
 
 //   Pentagon:

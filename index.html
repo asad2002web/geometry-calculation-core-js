@@ -257,17 +257,18 @@
                     />
                     <div class="card-body text-center pb-4">
                       <h5 class="card-title">Ellipse</h5>
-                      <p class="card-text">Area (A) = b×h</p>
+                      <p class="card-text">Area (A) = πab</p>
+                      <p>a=10cm; b=4cm</p>
                       <div
-                        class="d-flex justify-content-between w-75 mx-auto my-3"
+                        class="d-flex justify-content-between mx-auto my-3"
                       >
                         <div>
                           <input
                             class="w-75 px-1"
                             type="text"
                             name=""
-                            id=""
-                            placeholder="b"
+                            id="aInputField-ellipse"
+                            placeholder="a"
                           />
                           <label for="">cm</label>
                         </div>
@@ -276,14 +277,14 @@
                             class="w-75 px-1"
                             type="text"
                             name=""
-                            id=""
-                            placeholder="h"
+                            id="bInputField-ellipse"
+                            placeholder="b"
                           />
                           <label for="">cm</label>
                         </div>
                       </div>
-                      <a href="#" class="btn btn-primary w-75 fw-bold"
-                        >Calculate</a
+                      <button id="btn-ellipse-calculate" class="btn btn-primary w-100 fw-bold"
+                        >Calculate</button
                       >
                     </div>
                   </div>
@@ -339,6 +340,15 @@
                     </button>
                   </p>
                 </div>
+                <div class="mt-2">
+                  <p id="ellipse-area-show" class="text-start ps-3">
+                    6. Ellipse =
+                    <span id="ellipse-area"></span> cm<sup>2</sup>
+                    <button class="btn btn-primary ms-2">
+                      Convert to m<sup>2</sup>
+                    </button>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -351,6 +361,6 @@
     <!-- Utilities JS  -->
     <script src="js/utilities.js"></script>
     <!-- Triangel  -->
-    <script src="js/triAngel.js"></script>
+    <script src="js/areaCalculate.js"></script>
   </body>
 </html>

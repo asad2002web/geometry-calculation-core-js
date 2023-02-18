@@ -118,4 +118,27 @@ document
       bInputField.value = "";
     }
   });
-// 
+
+// Ellipse:
+document
+  .getElementById("btn-ellipse-calculate")
+  .addEventListener("click", function () {
+    const aInputField = document.getElementById("aInputField-ellipse");
+    const aInput = parseFloat(aInputField.value);
+
+    const bInputField = document.getElementById("bInputField-ellipse");
+    const bInput = parseFloat(bInputField.value);
+
+    if (isNaN (aInput) || isNaN(bInput)) {
+      alert("Please Write  a Number");
+    } else {
+      const areaEllipseShowe = document.getElementById("ellipse-area-show");
+      const ellipseResult = document.getElementById("ellipse-area");
+      const areaEllipse = 3.14 * aInput * bInput;
+      areaEllipseShowe.style.display = "block";
+      ellipseResult.innerText = areaEllipse.toFixed(2);
+
+      aInputField.value = "";
+      bInputField.value = "";
+    }
+  });

@@ -206,6 +206,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- Pentagon -->
                 <div class="col-md-4 g-3">
                   <div class="card">
                     <img
@@ -215,16 +216,17 @@
                     />
                     <div class="card-body text-center pb-4">
                       <h5 class="card-title">Pentagon</h5>
-                      <p class="card-text">Area (A) = w×l</p>
+                      <p class="card-text">Area (A) = 0.5×p×b</p>
+                      <p>p = 6cm; b = 10cm</p>
                       <div
-                        class="d-flex justify-content-between w-75 mx-auto my-3"
+                        class="d-flex justify-content-between mx-auto my-3"
                       >
                         <div>
                           <input
                             class="w-75 px-1"
                             type="text"
                             name=""
-                            id=""
+                            id="pInputField-pentagon"
                             placeholder="w"
                           />
                           <label for="">cm</label>
@@ -234,14 +236,14 @@
                             class="w-75 px-1"
                             type="text"
                             name=""
-                            id=""
+                            id="bInputField-pentagon"
                             placeholder="l"
                           />
                           <label for="">cm</label>
                         </div>
                       </div>
-                      <a href="#" class="btn btn-primary w-75 fw-bold"
-                        >Calculate</a
+                      <button id="btn-pentagon-calculate" class="btn btn-primary w-100 fw-bold"
+                        >Calculate</button
                       >
                     </div>
                   </div>
@@ -323,6 +325,15 @@
                   <p id="rhombus-area-show" class="text-start ps-3">
                     4. Rhombus =
                     <span id="rhombus-area"></span> cm<sup>2</sup>
+                    <button class="btn btn-primary ms-2">
+                      Convert to m<sup>2</sup>
+                    </button>
+                  </p>
+                </div>
+                <div class="mt-2">
+                  <p id="pentagon-area-show" class="text-start ps-3">
+                    5. Pentagon =
+                    <span id="pentagon-area"></span> cm<sup>2</sup>
                     <button class="btn btn-primary ms-2">
                       Convert to m<sup>2</sup>
                     </button>

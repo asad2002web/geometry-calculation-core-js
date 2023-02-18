@@ -23,7 +23,7 @@ a {
     height: 320px;
 }
 
-#triangel-area-show, #rectangular-area-show, #parallelogram-area-show, #rhombus-area-show{
+#triangel-area-show, #rectangular-area-show, #parallelogram-area-show, #rhombus-area-show, #pentagon-area-show{
   display: none;
 }
 /* Mobile Responsive */

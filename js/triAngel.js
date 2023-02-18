@@ -97,24 +97,25 @@ document
 
 //   Pentagon:
 document
-  .getElementById("btn-rhombus-calculate")
+  .getElementById("btn-pentagon-calculate")
   .addEventListener("click", function () {
-    const d1InputField = document.getElementById("d1InputField-rhombus");
-    const d1Input = parseFloat(d1InputField.value);
+    const pInputField = document.getElementById("pInputField-pentagon");
+    const pInput = parseFloat(pInputField.value);
 
-    const d2InputField = document.getElementById("d2InputField-rhombus");
-    const d2Input = parseFloat(d2InputField.value);
+    const bInputField = document.getElementById("bInputField-pentagon");
+    const bInput = parseFloat(bInputField.value);
 
-    if (isNaN(d1Input) || isNaN(d2Input)) {
+    if (isNaN (pInput) || isNaN(bInput)) {
       alert("Please Write  a Number");
     } else {
-      const areaRhombusShowe = document.getElementById("rhombus-area-show");
-      const rhombusResult = document.getElementById("rhombus-area");
-      const areaRhombus = 0.5 * d1Input * d2Input;
-      areaRhombusShowe.style.display = "block";
-      rhombusResult.innerText = areaRhombus.toFixed(2);
+      const areaPentagonShowe = document.getElementById("pentagon-area-show");
+      const pentagonResult = document.getElementById("pentagon-area");
+      const areaPentagon = 0.5 * pInput * bInput;
+      areaPentagonShowe.style.display = "block";
+      pentagonResult.innerText = areaPentagon.toFixed(2);
 
-      d1InputField.value = "";
-      d2InputField.value = "";
+      pInputField.value = "";
+      bInputField.value = "";
     }
   });
+// 

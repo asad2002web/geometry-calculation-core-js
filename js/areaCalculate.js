@@ -14,24 +14,12 @@ document
 document
   .getElementById("btn-rectangular-calculate")
   .addEventListener("click", function () {
+    const rectangularFirstInput = getInputValue("widthInputField");
+    const rectangularSecondInput = getInputValue("length-input-field");
 
-    const baseInputField = document.getElementById("widthInputField");
-    const baseInput = parseFloat(baseInputField.value);
-    const heightInputField = document.getElementById("length-input-field");
-    const heightInput = parseFloat(heightInputField.value);
-
-    if (isNaN(baseInput) || isNaN(heightInput)) {
-      alert("Please Write  a Number");
-    } else {
-      const areaRectangularShowe = document.getElementById("rectangular-area-show");
-      const areaRectangularResult = document.getElementById("rectangular-area");
-      const areaRectangular = baseInput * heightInput;
-      areaRectangularShowe.style.display = "block";
-      areaRectangularResult.innerText = areaRectangular.toFixed(2);
-
-      baseInputField.value = "";
-      heightInputField.value = "";
-    }
+    const areaRectangular = rectangularFirstInput * rectangularSecondInput;
+    displayShow("rectangular-area-show");
+    getInnerText("rectangular-area" , areaRectangular);
   });
 
 // Parallelogram:

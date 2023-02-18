@@ -20,7 +20,10 @@ a {
   text-decoration: none;
 }
 .card{
-    height: 320px;
+    height: 610px;
+}
+.area-container .card{
+  height: 300px;
 }
 
 #triangel-area-show, #rectangular-area-show, #parallelogram-area-show, #rhombus-area-show, #pentagon-area-show, #ellipse-area-show{
